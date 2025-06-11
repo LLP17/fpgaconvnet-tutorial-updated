@@ -17,11 +17,11 @@ As a prerequisite, install the following software on your machine:
 
 Note for using Vivado, you may set environment variable as instructed [here](https://support.xilinx.com/s/question/0D52E00006hpO2CSAU/how-to-start-with-vivado-in-linux?language=en_US). 
 
-Afterwards, create a new conda environment named as `fpgaconvnet-tutorial` and run the provided script `setup.sh` to finish the setup 
+Afterwards, create a new conda environment named as `fpgaconvnet-tutorial-updated` and run the provided script `setup.sh` to finish the setup 
 
 ```
-conda create -n fpgaconvnet-tutorial python=3.10
-conda activate fpgaconvnet-tutorial
+conda create -n fpgaconvnet-tutorial-updated python=3.10
+conda activate fpgaconvnet-tutorial-updated
 ./setup.sh
 ```
 

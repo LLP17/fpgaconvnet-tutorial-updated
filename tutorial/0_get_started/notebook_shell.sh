@@ -1,7 +1,7 @@
 #!/bin/bash
 CONDA_BASE=$(conda info --base)
 source ${CONDA_BASE}/etc/profile.d/conda.sh
-conda activate fpgaconvnet-tutorial
+conda activate fpgaconvnet-tutorial-updated
 
 TUTORIAL_ROOT_PATH=$(git rev-parse --show-toplevel)
 

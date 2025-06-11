@@ -1,7 +1,7 @@
 #!/bin/bash
 CONDA_BASE=$(conda info --base)
 source ${CONDA_BASE}/etc/profile.d/conda.sh
-conda activate fpgaconvnet-tutorial
+conda activate fpgaconvnet-tutorial-updated
 
 # checkout fpgaconvnet repo
 TUTORIAL_ROOT_PATH=$(git rev-parse --show-toplevel)
@@ -12,19 +12,19 @@ make torch-cpu
 cd ..
 
 
-git clone https://github.com/AlexMontgomerie/fpgaconvnet-optimiser ${TUTORIAL_ROOT_PATH}/fpgaconvnet-optimiser
+git clone https://github.com/LLP17/fpgaconvnet-optimiser.git ${TUTORIAL_ROOT_PATH}/fpgaconvnet-optimiser
 cd ${TUTORIAL_ROOT_PATH}/fpgaconvnet-optimiser
 git checkout dev
 python -m pip install -e .
 cd ..
 
-git clone https://github.com/AlexMontgomerie/fpgaconvnet-model ${TUTORIAL_ROOT_PATH}/fpgaconvnet-model
+git clone https://github.com/LLP17/fpgaconvnet-model.git ${TUTORIAL_ROOT_PATH}/fpgaconvnet-model
 cd ${TUTORIAL_ROOT_PATH}/fpgaconvnet-model
 git checkout dev
 python -m pip install -e .
 cd ..
 
-git clone https://github.com/AlexMontgomerie/fpgaconvnet-hls ${TUTORIAL_ROOT_PATH}/fpgaconvnet-hls
+git clone https://github.com/LLP17/fpgaconvnet-hls.git ${TUTORIAL_ROOT_PATH}/fpgaconvnet-hls
 cd ${TUTORIAL_ROOT_PATH}/fpgaconvnet-hls
 git checkout dev
 git submodule update --init --recursive
